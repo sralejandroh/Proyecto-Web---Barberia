@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
         <title>
-            Web
+            Contacto
         </title>
     </head>
 
@@ -45,10 +45,28 @@
                 </nav>
             </div>
         </header>
-        
-        <div class="imagenCentral">
-            <img class="banner" src="imagenes/banner.jpg">
-        </div>    
+
+        <main>
+            <form class="formulario">
+                <label for="nombre" class="cuadroFormulario">
+                    Nombre
+                </label>
+                <input type="text" id="nombre" class="entradaFormulario" required>
+                <label for="correo" class="cuadroFormulario">
+                    Correo
+                </label>
+                <input type="email" id="correo" class="entradaFormulario" required placeholder="correo@dominio.dominio">
+                <label for="telefono" class="cuadroFormulario">
+                    Teléfono
+                </label>
+                <input type="tel" id="telefono" class="entradaFormulario" placeholder="(XX) XXX XXX XXXX">
+                <label for="area" class="cuadroFormulario">
+                    Mensaje
+                </label>
+                <textarea id="area" cols="30" rows="10" class="entradaFormulario" required placeholder="Escribir aquí...">
+                </textarea>
+            </form>
+        </main>
 
         <footer class="pie">
             <img src="imagenes/logo-blanco.png">

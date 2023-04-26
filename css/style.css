@@ -216,14 +216,33 @@ main {
 }
 
 .servicioDescripcion {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .servicioPrecio {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     color: green;
     margin-top: 10px;
 }
 
+/*ESTILOS DE LA PÁGINA DE CONTACTO*/
+
+.formulario {
+    padding: 10px 170px;
+}
+
+.cuadroFormulario {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.entradaFormulario {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+}
