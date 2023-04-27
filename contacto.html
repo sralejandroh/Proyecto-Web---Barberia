@@ -47,25 +47,71 @@
         </header>
 
         <main>
-            <form class="formulario">
-                <label for="nombre" class="cuadroFormulario">
-                    Nombre
-                </label>
-                <input type="text" id="nombre" class="entradaFormulario" required>
-                <label for="correo" class="cuadroFormulario">
-                    Correo
-                </label>
-                <input type="email" id="correo" class="entradaFormulario" required placeholder="correo@dominio.dominio">
-                <label for="telefono" class="cuadroFormulario">
-                    Teléfono
-                </label>
-                <input type="tel" id="telefono" class="entradaFormulario" placeholder="(XX) XXX XXX XXXX">
-                <label for="area" class="cuadroFormulario">
-                    Mensaje
-                </label>
-                <textarea id="area" cols="30" rows="10" class="entradaFormulario" required placeholder="Escribir aquí...">
-                </textarea>
-            </form>
+            <div>
+                <form class="formulario">
+                    <label for="nombre" class="cuadroFormulario">
+                        Nombre
+                    </label>
+                    <input type="text" id="nombre" class="entradaFormulario" required>
+                    <label for="correo" class="cuadroFormulario">
+                        Correo
+                    </label>
+                    <input type="email" id="correo" class="entradaFormulario" required placeholder="correo@dominio.dominio">
+                    <label for="telefono" class="cuadroFormulario">
+                        Teléfono
+                    </label>
+                    <input type="tel" id="telefono" class="entradaFormulario" required placeholder="(XX) XXX XXX XXXX">
+                    <label for="area" class="cuadroFormulario">
+                        Mensaje
+                    </label>
+                    <textarea id="area" cols="30" rows="10" class="entradaFormulario" required placeholder="Escribir aquí..."></textarea>
+                
+                    <fieldset>
+                        <legend class="entradaInformacion">
+                            ¿CUÁL ES SU PREFERENCIA DE CONTACTO?
+                        </legend>
+                        <label for="opcionCorreo" class="entradaFormulario" >
+                            <input type="radio" name="contacto" id="opcionCorreo" value="Correo" checked>
+                            Correo
+                        </label>
+                        <label for="opcionTelefono" class="entradaFormulario">
+                            <input type="radio" name="contacto" id="opcionTelefono" value="Teléfono">
+                            Teléfono
+                        </label>
+                        <label for="OpcionWhatsApp" class="entradaFormulario">
+                            <input type="radio" name="contacto" id="opcionWhatsApp" value="WhatsApp">
+                            WhatsApp
+                        </label>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend class="entradaInformacion">
+                            ELIJA EL HORARIO DE ATENCIÓN
+                        </legend>
+                        <select class="opcionesContacto">
+                            <option value="Elegir">
+                                Elegir
+                            </option>
+                            <option value="Mañana">
+                                Mañana
+                            </option>
+                            <option value="Tarde">
+                                Tarde
+                            </option>
+                            <option value="Noche">
+                                Noche
+                            </option>
+                        </select>
+                    </fieldset>
+                
+                    <label class="checkboxOfertas">
+                        <input type="checkbox">
+                        ¿DESEA RECIBIR NOTICIAS Y DESCUENTOS?
+                    </label>
+
+                    <input type="submit" value="ENVIAR" class="botonFormulario">
+                </form>
+            </div>
         </main>
 
         <footer class="pie">

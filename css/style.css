@@ -230,7 +230,13 @@ main {
 /*ESTILOS DE LA PÁGINA DE CONTACTO*/
 
 .formulario {
-    padding: 10px 170px;
+    /*padding: 10px 170px;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuadroFormulario {
@@ -243,6 +249,46 @@ main {
 .entradaFormulario {
     display: block;
     margin: 0 0 20px;
-    padding: 10px 25px;
+    padding: 10px 15px;
     width: 40%;
+    font-size: 15px;
+}
+
+.entradaInformacion {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+}
+
+.opcionesContacto {
+    font-size: 18px;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 110px;
+}
+
+.checkboxOfertas {
+    font-weight: bold;
+    color: red;
+    margin: 20px 0;
+}
+
+.botonFormulario {
+    width: 20%;
+    padding: 15px 0;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    display: block;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botonFormulario:hover {
+    background: green;
+    transform: scale(1.1);
 }
